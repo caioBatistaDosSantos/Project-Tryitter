@@ -19,5 +19,6 @@ public class User
     [Required(ErrorMessage="Required field")]
     [MinLength(3, ErrorMessage="Status must be at least 3 characters long")]
     public string Status { get; set; }
+    public ICollection<Post>? Posts { get; set; }
 
 }
