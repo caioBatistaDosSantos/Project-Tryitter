@@ -1,13 +1,14 @@
 using Microsoft.EntityFrameworkCore;
-using students_db.Models;
+using tryitter.Models;
 
 namespace tryitter.Context;
 
-public class StudentsContext : DbContext
+public class TryitterContext : DbContext
 {
-    public DbSet<Student> Students { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<Post> Posts { get; set; }
 
-    public StudentsContext(DbContextOptions<StudentsContext> options) : base(options) {}
+    public TryitterContext(DbContextOptions<TryitterContext> options) : base(options) {}
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -21,11 +22,5 @@ public class StudentsContext : DbContext
                 options => options.EnableRetryOnFailure()
             );
         }
-    }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Student>()
-            .HasKey(s => s.RA);
     }
 }
