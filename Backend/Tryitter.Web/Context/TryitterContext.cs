@@ -3,7 +3,7 @@ using tryitter.Models;
 
 namespace tryitter.Context;
 
-public class TryitterContext : DbContext
+public class TryitterContext : DbContext, ITryitterContext
 {
     public DbSet<User> Users { get; set; }
     public DbSet<Post> Posts { get; set; }
