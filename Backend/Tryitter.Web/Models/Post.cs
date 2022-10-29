@@ -8,7 +8,7 @@ public class Post
     public string? UrlImage { get; set; }
     public string? Content { get; set; }
     // public int UserId { get; set; }
-    public User UserId { get; set; }
+    public User User { get; set; }
     public DateTime PublishedAt { get; set; } = DateTime.Now;
     public DateTime? UpdatedAt { get; set; }
 
