@@ -1,5 +1,6 @@
 using tryitter.Context;
 using Microsoft.EntityFrameworkCore;
+using tryitter.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<TryitterContext>(options =>
                 errorNumbersToAdd: null)
         );
 });
+builder.Services.AddScoped<TryitterRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
