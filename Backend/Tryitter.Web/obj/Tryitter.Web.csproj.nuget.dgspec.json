@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macbook/Project-Tryitter/Tryitter.Web/Tryitter.Web.csproj": {}
+    "/Users/macbook/Project-Tryitter/Backend/Tryitter.Web/Tryitter.Web.csproj": {}
   },
   "projects": {
-    "/Users/macbook/Project-Tryitter/Tryitter.Web/Tryitter.Web.csproj": {
+    "/Users/macbook/Project-Tryitter/Backend/Tryitter.Web/Tryitter.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbook/Project-Tryitter/Tryitter.Web/Tryitter.Web.csproj",
+        "projectUniqueName": "/Users/macbook/Project-Tryitter/Backend/Tryitter.Web/Tryitter.Web.csproj",
         "projectName": "Tryitter.Web",
-        "projectPath": "/Users/macbook/Project-Tryitter/Tryitter.Web/Tryitter.Web.csproj",
+        "projectPath": "/Users/macbook/Project-Tryitter/Backend/Tryitter.Web/Tryitter.Web.csproj",
         "packagesPath": "/Users/macbook/.nuget/packages/",
-        "outputPath": "/Users/macbook/Project-Tryitter/Tryitter.Web/obj/",
+        "outputPath": "/Users/macbook/Project-Tryitter/Backend/Tryitter.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/macbook/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,26 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
