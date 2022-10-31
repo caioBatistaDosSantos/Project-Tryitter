@@ -19,7 +19,7 @@ builder.Services.AddDbContext<TryitterContext>(options =>
                 errorNumbersToAdd: null)
         );
 });
-builder.Services.AddScoped<TryitterRepository>();
+builder.Services.AddScoped<UserRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

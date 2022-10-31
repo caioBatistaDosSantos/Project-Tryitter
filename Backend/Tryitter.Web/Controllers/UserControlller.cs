@@ -9,13 +9,24 @@ namespace Tryitter.Web.Controllers;
 [Route("[controller]")]
 public class UserController : ControllerBase
 {
-    public TryitterRepository _repository { get; set; }
-    public UserController(TryitterRepository repository) {
+    private UserRepository _repository { get; set; }
+    public UserController(UserRepository repository) {
         _repository = repository;
     }
 
     [HttpGet]
-    public async Task<List<User>> Get() {
-        return await _repository.Get();
+    public async Task<ActionResult<List<User>>> Get() {
+        return Ok(await _repository.Get());
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<User>> GetByPk(int id) {
+
+        var user = await _repository.GetByPk(id);
+
+        if(user == null)
+            return NoContent();
+
+        return Ok(user);
     }
 }
