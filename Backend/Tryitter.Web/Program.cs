@@ -1,6 +1,8 @@
 using tryitter.Context;
 using Microsoft.EntityFrameworkCore;
 using tryitter.Repository;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +25,19 @@ builder.Services.AddScoped<UserRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options => 
+{
+    string file = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    string path = Path.Combine(AppContext.BaseDirectory, file);
+    options.IncludeXmlComments(path);
+    options.SwaggerDoc(
+        "v1", 
+        new OpenApiInfo { 
+            Title = "Blogs API Tryitter", 
+            Description = "Uma API de blogs ao estilo do Twitter!",
+            Version = "v1"
+        });
+});
 
 var app = builder.Build();
 

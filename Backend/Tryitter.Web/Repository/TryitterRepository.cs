@@ -16,12 +16,10 @@ public class UserRepository
     }
 
     public async Task<List<User>> Get() {
-        var users = await _context.Users.ToListAsync();
-        return users;
+        return await _context.Users.ToListAsync();
     }
 
     public async Task<User> GetByPk(int id) {
-        var user = await _context.Users.FirstAsync(u => u.Id == id);
-        return user;
+        return await _context.Users.FirstAsync(u => u.Id == id);
     }
 };

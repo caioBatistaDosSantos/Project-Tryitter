@@ -70,3 +70,5 @@
 /home/abner/projects/Project-Tryitter/Backend/Tryitter.Web/obj/Debug/net6.0/Tryitter.Web.csproj.CopyComplete
 /home/abner/projects/Project-Tryitter/Backend/Tryitter.Web/obj/Debug/net6.0/Tryitter.Web.genruntimeconfig.cache
 /home/abner/projects/Project-Tryitter/Backend/Tryitter.Web/obj/Debug/net6.0/ref/Tryitter.Web.dll
+/home/abner/projects/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Tryitter.Web.xml
+/home/abner/projects/Project-Tryitter/Backend/Tryitter.Web/obj/Debug/net6.0/Tryitter.Web.xml
