@@ -47,7 +47,6 @@ public class UserRepository
     }
 
     public async Task<User> Create(User request) {
-        
         _context.Users.Add(request);
         await _context.SaveChangesAsync();
         return request;
