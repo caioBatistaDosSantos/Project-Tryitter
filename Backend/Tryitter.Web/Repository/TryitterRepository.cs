@@ -22,4 +22,11 @@ public class UserRepository
     public async Task<User> GetByPk(int id) {
         return await _context.Users.FirstAsync(u => u.Id == id);
     }
+
+    public async Task<User> Remove(int id) {
+        var user = await GetByPk(id);
+        _context.Users.Remove(user);
+        await _context.SaveChangesAsync();
+        return user;
+    }
 };

@@ -38,7 +38,43 @@ public class UserController : ControllerBase
         catch (InvalidOperationException err)
         {
             Console.WriteLine(err.Message);
-            return NoContent();
+            return NotFound("Não encontrei.");
+        }
+    }
+
+    /// <summary>
+    /// Remove o item o objeto User se existir
+    /// </summary>
+    /// <returns>Um item do objeto User</returns>
+    /// <response code="200">Retorna o objeto User encontrado</response>
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<User>> Remove(int id) {
+        try 
+        {
+            return Ok(await _repository.Remove(id));
+        }
+        catch (InvalidOperationException err)
+        {
+            Console.WriteLine(err.Message);
+            return NotFound("Não encontrei.");
+        }
+    }
+
+    /// <summary>
+    /// Remove o item o objeto User se existir
+    /// </summary>
+    /// <returns>Um item do objeto User</returns>
+    /// <response code="200">Retorna o objeto User encontrado</response>
+    [HttpPut("{id}")]
+    public async Task<ActionResult<User>> Update(int id) {
+        try 
+        {
+            return Ok(await _repository.Remove(id));
+        }
+        catch (InvalidOperationException err)
+        {
+            Console.WriteLine(err.Message);
+            return NotFound("Não encontrei.");
         }
     }
 }
