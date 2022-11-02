@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using tryitter.Models;
 using tryitter.Context;
 using tryitter.Requesties;
@@ -6,16 +7,19 @@ using System.Threading;
 
 namespace tryitter.Repository;
 
-public class TryitterRepository
+public class UserRepository
 {
     protected readonly TryitterContext _context;
-    public TryitterRepository(TryitterContext context)
+    public UserRepository(TryitterContext context)
     {
         _context = context;
     }
 
     public async Task<List<User>> Get() {
-        var result = await _context.Users.ToListAsync();
-        return result;
+        return await _context.Users.ToListAsync();
     }
-}
+
+    public async Task<User> GetByPk(int id) {
+        return await _context.Users.FirstAsync(u => u.Id == id);
+    }
+};
