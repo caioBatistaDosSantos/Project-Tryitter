@@ -18,4 +18,8 @@ public class PostRepository
     public async Task<List<Post>> Get() {
         return await _context.Posts.ToListAsync();
     }
+
+    public async Task<Post> GetByPk(int id) {
+        return await _context.Posts.FirstAsync(u => u.PostId == id);
+    }
 }

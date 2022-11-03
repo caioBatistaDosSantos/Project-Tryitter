@@ -26,5 +26,23 @@ namespace Tryitter.Web.Controllers
         public async Task<ActionResult<List<Post>>> Get() {
             return Ok(await _repository.Get());
         }
+
+        /// <summary>
+        /// Lista um único item do objeto Post de acordo com id passado
+        /// </summary>
+        /// <returns>Um item do objeto Post</returns>
+        /// <response code="200">Retorna o objeto Post encontrado</response>
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Post>> GetByPk(int id) {
+            try 
+            {
+                return Ok(await _repository.GetByPk(id));
+            }
+            catch (InvalidOperationException err)
+            {
+                Console.WriteLine(err.Message);
+                return NotFound("Não encontrei.");
+            }
+        }
     }
 }
