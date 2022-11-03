@@ -14,4 +14,8 @@ public class PostRepository
     {
         _context = context;
     }
+
+    public async Task<List<Post>> Get() {
+        return await _context.Posts.ToListAsync();
+    }
 }
