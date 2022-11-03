@@ -40,7 +40,7 @@ public class TryitterContext : DbContext, ITryitterContext
                     Email = "wayne@gmail.com",
                     Module = "Ciência da Computação",
                     Status = "Combatendo o crime em Gothan por meio da programação.",
-                    Password = 123456
+                    Password = "123456"
                 },
                 new User {
                     Id = 2,
@@ -48,7 +48,7 @@ public class TryitterContext : DbContext, ITryitterContext
                     Email = "hulkbravo@gmail.com",
                     Module = "Frontend",
                     Status = "Quebrando o computador porque não conseguiu centralizar o texto do botão!",
-                    Password = 123456
+                    Password = "123456"
                 },
                 new User {
                     Id = 3,
@@ -56,7 +56,7 @@ public class TryitterContext : DbContext, ITryitterContext
                     Email = "kurosaki@gmail.com",
                     Module = "Backend",
                     Status = "Muuuahahahah",
-                    Password = 123456
+                    Password = "123456"
                 },
                 new User {
                     Id = 4,
@@ -64,7 +64,7 @@ public class TryitterContext : DbContext, ITryitterContext
                     Email = "agentep@gmail.com",
                     Module = "Fundamentos do Desenvolvimento Web",
                     Status = "Ué, cadê o Perry?",
-                    Password = 123456
+                    Password = "123456"
                 }
             );
     }

@@ -1,6 +1,6 @@
 using tryitter.Context;
 using Microsoft.EntityFrameworkCore;
-using tryitter.Repository;
+using tryitter.UserRepository;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 
