@@ -44,5 +44,23 @@ namespace Tryitter.Web.Controllers
                 return NotFound("Não encontrei.");
             }
         }
+
+        /// <summary>
+        /// Remove o item o objeto Post se existir
+        /// </summary>
+        /// <returns>Um item do objeto Post</returns>
+        /// <response code="200">Retorna o objeto Post encontrado</response>
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Post>> Remove(int id) {
+            try 
+            {
+                return Ok(await _repository.Remove(id));
+            }
+            catch (InvalidOperationException err)
+            {
+                Console.WriteLine(err.Message);
+                return NotFound("Não encontrei.");
+            }
+        }
     }
 }
