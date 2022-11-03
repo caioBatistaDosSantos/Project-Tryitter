@@ -29,4 +29,18 @@ public class PostRepository
         await _context.SaveChangesAsync();
         return post;
     }
+
+    public async Task<Post> Update(int id, Post request) {
+        var post = await _context.Posts.FirstAsync(u => u.PostId == id);
+
+        if(post == null) 
+            throw new ArgumentException("Não encontrei!");
+        
+        post.UrlImage = request.UrlImage;
+        post.Content = request.Content;
+        post.UpdatedAt = DateTime.Now;
+
+        await _context.SaveChangesAsync();
+        return post;
+    }
 }

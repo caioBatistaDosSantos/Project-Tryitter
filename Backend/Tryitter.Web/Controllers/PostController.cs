@@ -62,5 +62,22 @@ namespace Tryitter.Web.Controllers
                 return NotFound("Não encontrei.");
             }
         }
+
+        /// <summary>
+        /// Atualiza o item o objeto Post de acordo com id
+        /// </summary>
+        /// <returns>Um item do objeto Post</returns>
+        /// <response code="200">Retorna o objeto Post atualizado</response>
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Post>> Update(int id, Post request) {
+            try 
+            {
+                return Ok(await _repository.Update(id, request));
+            }
+            catch(Exception err) 
+            {
+                return NotFound(err.Message);
+            }
+        }
     }
 }
