@@ -79,5 +79,15 @@ namespace Tryitter.Web.Controllers
                 return NotFound(err.Message);
             }
         }
+
+        /// <summary>
+        /// Cria um objeto Post
+        /// </summary>
+        /// <returns>Um item do objeto Post</returns>
+        /// <response code="200">Retorna o objeto Post criado</response>
+        [HttpPost]
+        public async Task<ActionResult<Post>> Create(Post request) {
+            return Ok(await _repository.Create(request));
+        }
     }
 }

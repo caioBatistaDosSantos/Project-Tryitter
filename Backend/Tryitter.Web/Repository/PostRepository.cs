@@ -43,4 +43,11 @@ public class PostRepository
         await _context.SaveChangesAsync();
         return post;
     }
+
+
+    public async Task<Post> Create(Post request) {
+        _context.Posts.Add(request);
+        await _context.SaveChangesAsync();
+        return request;
+    }
 }
