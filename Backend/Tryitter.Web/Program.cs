@@ -1,6 +1,7 @@
 using tryitter.Context;
 using Microsoft.EntityFrameworkCore;
-using tryitter.Repository;
+using tryitter.UserRepository;
+using tryitter.PostRepository;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 
@@ -22,6 +23,7 @@ builder.Services.AddDbContext<TryitterContext>(options =>
         );
 });
 builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<PostRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

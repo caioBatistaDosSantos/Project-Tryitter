@@ -5,7 +5,7 @@ using tryitter.Context;
 using tryitter.Requesties;
 using System.Threading;
 
-namespace tryitter.Repository;
+namespace tryitter.UserRepository;
 
 public class UserRepository
 {

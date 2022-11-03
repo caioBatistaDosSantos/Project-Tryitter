@@ -1042,11 +1042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/abner/projects/Project-Tryitter/Backend/Tryitter.Web/Tryitter.Web.csproj",
+      "projectUniqueName": "/home/abner/Project-Tryitter/Backend/Tryitter.Web/Tryitter.Web.csproj",
       "projectName": "Tryitter.Web",
-      "projectPath": "/home/abner/projects/Project-Tryitter/Backend/Tryitter.Web/Tryitter.Web.csproj",
+      "projectPath": "/home/abner/Project-Tryitter/Backend/Tryitter.Web/Tryitter.Web.csproj",
       "packagesPath": "/home/abner/.nuget/packages/",
-      "outputPath": "/home/abner/projects/Project-Tryitter/Backend/Tryitter.Web/obj/",
+      "outputPath": "/home/abner/Project-Tryitter/Backend/Tryitter.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/abner/.nuget/NuGet/NuGet.Config"

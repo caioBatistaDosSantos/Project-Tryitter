@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using tryitter.Repository;
+using tryitter.UserRepository;
 using System.Threading.Tasks;
 using tryitter.Models;
 
