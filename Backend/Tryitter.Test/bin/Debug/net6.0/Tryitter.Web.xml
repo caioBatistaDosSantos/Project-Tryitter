@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tryitter.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Tryitter.Web.Controllers.PostController.Get">
+            <summary>
+            Lista os itens do objeto Post
+            </summary>
+            <returns>Os itens do objeto Post</returns>
+            <response code="200">Retorna os itens do objeto Post</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.PostController.GetByPk(System.Int32)">
+            <summary>
+            Lista um único item do objeto Post de acordo com id passado
+            </summary>
+            <returns>Um item do objeto Post</returns>
+            <response code="200">Retorna o objeto Post encontrado</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.PostController.Remove(System.Int32)">
+            <summary>
+            Remove o item o objeto Post se existir
+            </summary>
+            <returns>Um item do objeto Post</returns>
+            <response code="200">Retorna o objeto Post encontrado</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.PostController.Update(System.Int32,tryitter.Models.Post)">
+            <summary>
+            Atualiza o item o objeto Post de acordo com id
+            </summary>
+            <returns>Um item do objeto Post</returns>
+            <response code="200">Retorna o objeto Post atualizado</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.PostController.Create(tryitter.Models.Post)">
+            <summary>
+            Cria um objeto Post
+            </summary>
+            <returns>Um item do objeto Post</returns>
+            <response code="200">Retorna o objeto Post criado</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.UserController.Get">
+            <summary>
+            Lista os itens do objeto User
+            </summary>
+            <returns>Os itens do objeto User</returns>
+            <response code="200">Retorna os itens do objeto User</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.UserController.GetByPk(System.Int32)">
+            <summary>
+            Lista um único item do objeto User de acordo com id passado
+            </summary>
+            <returns>Um item do objeto User</returns>
+            <response code="200">Retorna o objeto User encontrado</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.UserController.Remove(System.Int32)">
+            <summary>
+            Remove o item o objeto User se existir
+            </summary>
+            <returns>Um item do objeto User</returns>
+            <response code="200">Retorna o objeto User encontrado</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.UserController.Update(System.Int32,tryitter.Models.User)">
+            <summary>
+            Atualiza o item o objeto User de acordo com id
+            </summary>
+            <returns>Um item do objeto User</returns>
+            <response code="200">Retorna o objeto User atualizado</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.UserController.Create(tryitter.Models.User)">
+            <summary>
+            Cria um objeto User
+            </summary>
+            <returns>Um item do objeto User</returns>
+            <response code="200">Retorna o objeto User criado</response>
+        </member>
+    </members>
+</doc>
