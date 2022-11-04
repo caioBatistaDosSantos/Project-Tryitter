@@ -25,7 +25,7 @@ public class PostRepository
 
     public async Task<Post> GetLastPostFromUser(int id) {
         return await _context.Posts
-                             .OrderBy(p => p.PostId)
+                             .OrderBy(p => p.PublishedAt)
                              .LastAsync(u => u.UserId == id);
     }
 

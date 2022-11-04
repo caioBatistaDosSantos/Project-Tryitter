@@ -12,6 +12,7 @@ public class User
     public string Password { get; set; } = string.Empty;
     public string Module { get; set; } = string.Empty;
     public string Status { get; set; } = string.Empty;
+    
     [JsonIgnore]
     public int PostId { get; set; }
     public ICollection<Post>? Posts { get; set; }

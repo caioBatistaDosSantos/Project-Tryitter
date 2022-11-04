@@ -26,6 +26,13 @@ public class TryitterContext : DbContext, ITryitterContext
 
     protected override void OnModelCreating(ModelBuilder mb) 
     {
+        // User -> 1:N Post
+        // Grade -> 1:N Student
+        mb.Entity<Post>()
+            .HasOne<User>(u => u.User)
+            .WithMany(u => u.Posts)
+            .HasForeignKey(p => p.PostId);
+
         mb.Entity<User>()
             .HasKey(u => u.Id);
         
