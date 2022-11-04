@@ -28,6 +28,7 @@ public class UserRepository
                              .Include(p => p.Posts)
                              .Where(u => u.Id == id)
                              .ToListAsync();
+
         if(userWithYourPosts.Count == 0) 
             throw new DbUpdateException();
         return userWithYourPosts;

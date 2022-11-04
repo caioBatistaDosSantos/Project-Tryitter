@@ -23,6 +23,12 @@ public class PostRepository
         return await _context.Posts.FirstAsync(u => u.PostId == id);
     }
 
+    public async Task<Post> GetLastPostFromUser(int id) {
+        return await _context.Posts
+                             .OrderBy(p => p.PostId)
+                             .LastAsync(u => u.UserId == id);
+    }
+
     public async Task<Post> Remove(int id) {
         var post = await GetByPk(id);
         _context.Posts.Remove(post);

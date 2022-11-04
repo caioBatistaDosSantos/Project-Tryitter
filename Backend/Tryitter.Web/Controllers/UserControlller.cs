@@ -29,7 +29,7 @@ public class UserController : ControllerBase
     /// </summary>
     /// <returns>Um item do objeto User</returns>
     /// <response code="200">Retorna o objeto User encontrado</response>
-    [HttpGet("{id}")]
+    [HttpGet("{userid}")]
     public async Task<ActionResult<User>> GetByPk(int id) {
         try 
         {
@@ -42,6 +42,11 @@ public class UserController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Lista um objeto User com seus respectivos item de objeto Post
+    /// </summary>
+    /// <returns>Um item do objeto User</returns>
+    /// <response code="200">Retorna o objeto User encontrado com seus posts</response>
     [HttpGet("posts")]
     public async Task<ActionResult<User>> GetUserWithYourPosts(int id) {
         try 
@@ -60,7 +65,7 @@ public class UserController : ControllerBase
     /// </summary>
     /// <returns>Um item do objeto User</returns>
     /// <response code="200">Retorna o objeto User encontrado</response>
-    [HttpDelete("{id}")]
+    [HttpDelete("{userid}")]
     public async Task<ActionResult<User>> Remove(int id) {
         try 
         {
@@ -78,7 +83,7 @@ public class UserController : ControllerBase
     /// </summary>
     /// <returns>Um item do objeto User</returns>
     /// <response code="200">Retorna o objeto User atualizado</response>
-    [HttpPut("{id}")]
+    [HttpPut("{userid}")]
     public async Task<ActionResult<User>> Update(int id, User request) {
         try 
         {

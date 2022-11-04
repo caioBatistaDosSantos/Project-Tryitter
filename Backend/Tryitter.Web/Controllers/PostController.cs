@@ -32,7 +32,7 @@ namespace Tryitter.Web.Controllers
         /// </summary>
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post encontrado</response>
-        [HttpGet("{id}")]
+        [HttpGet("{postid}")]
         public async Task<ActionResult<Post>> GetByPk(int id) {
             try 
             {
@@ -46,11 +46,21 @@ namespace Tryitter.Web.Controllers
         }
 
         /// <summary>
+        /// Lista o último item do objeto Post de acordo com id do usuário que deve ser passado no params
+        /// </summary>
+        /// <returns>Um item do objeto Post</returns>
+        /// <response code="200">Retorna o objeto Post encontrado</response>
+        [HttpGet("last/{userid}")]
+        public async Task<Post> GetLastPostFromUser(int userid) {
+            return await _repository.GetLastPostFromUser(userid);
+        }
+
+        /// <summary>
         /// Remove o item o objeto Post se existir
         /// </summary>
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post encontrado</response>
-        [HttpDelete("{id}")]
+        [HttpDelete("{postid}")]
         public async Task<ActionResult<Post>> Remove(int id) {
             try 
             {
@@ -68,7 +78,7 @@ namespace Tryitter.Web.Controllers
         /// </summary>
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post atualizado</response>
-        [HttpPut("{id}")]
+        [HttpPut("{postid}")]
         public async Task<ActionResult<Post>> Update(int id, Post request) {
             try 
             {
