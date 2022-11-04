@@ -10,6 +10,6 @@ public class Post
     public DateTime PublishedAt { get; set; } = DateTime.Now;
     public DateTime? UpdatedAt { get; set; }
     public int UserId { get; set; }
+    [JsonIgnore]
     public User User { get; set; } = null!;
-
 }

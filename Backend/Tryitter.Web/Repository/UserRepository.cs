@@ -23,6 +23,16 @@ public class UserRepository
         return await _context.Users.FirstAsync(u => u.Id == id);
     }
 
+    public async Task<List<User>> GetUserWithYourPosts(int id) {
+        var userWithYourPosts = await _context.Users
+                             .Include(p => p.Posts)
+                             .Where(u => u.Id == id)
+                             .ToListAsync();
+        if(userWithYourPosts.Count == 0) 
+            throw new DbUpdateException();
+        return userWithYourPosts;
+    }
+
     public async Task<User> Remove(int id) {
         var user = await GetByPk(id);
         _context.Users.Remove(user);

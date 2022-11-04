@@ -4,7 +4,6 @@ using System.Text.Json.Serialization;
 namespace tryitter.Models;
 public class User
 {
-    [JsonIgnore]
     public int? Id { get; set; }
     public string Name { get; set; } = string.Empty;
     // [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Email must be in a valid format"), 
@@ -15,7 +14,5 @@ public class User
     public string Status { get; set; } = string.Empty;
     [JsonIgnore]
     public int PostId { get; set; }
-    [JsonIgnore]
     public ICollection<Post>? Posts { get; set; }
-
 }

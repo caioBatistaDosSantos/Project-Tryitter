@@ -42,6 +42,19 @@ public class UserController : ControllerBase
         }
     }
 
+    [HttpGet("posts")]
+    public async Task<ActionResult<User>> GetUserWithYourPosts(int id) {
+        try 
+        {
+            return Ok(await _repository.GetUserWithYourPosts(id));
+        }
+        catch (Exception err)
+        {
+            Console.WriteLine(err.Message);
+            return NotFound("Não encontrei.");
+        }
+    }
+
     /// <summary>
     /// Remove o item o objeto User se existir
     /// </summary>
