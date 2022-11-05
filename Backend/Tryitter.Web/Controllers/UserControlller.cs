@@ -10,7 +10,7 @@ namespace Tryitter.Web.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-// [Authorize]
+[Authorize]
 public class UserController : ControllerBase
 {
     private UserRepository _repository { get; set; }

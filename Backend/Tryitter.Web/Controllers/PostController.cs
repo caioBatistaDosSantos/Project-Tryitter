@@ -20,6 +20,11 @@ namespace Tryitter.Web.Controllers
             _repository = repository;
         }
 
+        [HttpGet("/teste")]
+        public ActionResult<string> Seila() {
+            return Ok(User.Identity.Name);
+        }
+
         /// <summary>
         /// Lista os itens do objeto Post
         /// </summary>

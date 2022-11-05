@@ -28,11 +28,11 @@ public class TokenGenerator
 
         return tokenHandler.WriteToken(token);
     }
-    private ClaimsIdentity AddClaims(User user)
+    private static ClaimsIdentity AddClaims(User user)
     {
         var claims = new ClaimsIdentity();
 
-        claims.AddClaim(new Claim("Id", user.Id.ToString()));
+        claims.AddClaim(new Claim(ClaimTypes.Name, user.Id.ToString()));
 
         return claims;
     }
