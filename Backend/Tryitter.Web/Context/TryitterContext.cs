@@ -31,10 +31,13 @@ public class TryitterContext : DbContext, ITryitterContext
         mb.Entity<Post>()
             .HasOne<User>(u => u.User)
             .WithMany(u => u.Posts)
-            .HasForeignKey(p => p.PostId);
+            .HasForeignKey(p => p.UserId);
 
         mb.Entity<User>()
             .HasKey(u => u.Id);
+
+        mb.Entity<Post>()
+            .HasKey(p => p.PostId);
         
         mb.Entity<User>()
             .HasData(
@@ -71,9 +74,6 @@ public class TryitterContext : DbContext, ITryitterContext
                     Password = "123456"
                 }
             );
-
-        mb.Entity<Post>()
-            .HasKey(p => p.PostId);
 
         mb.Entity<Post>()
             .Property(p => p.Content)

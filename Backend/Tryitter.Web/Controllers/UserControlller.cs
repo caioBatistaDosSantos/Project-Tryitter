@@ -2,16 +2,31 @@ using Microsoft.AspNetCore.Mvc;
 using tryitter.UserRepository;
 using System.Threading.Tasks;
 using tryitter.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace Tryitter.Web.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[Authorize]
 public class UserController : ControllerBase
 {
     private UserRepository _repository { get; set; }
     public UserController(UserRepository repository) {
         _repository = repository;
+    }
+
+    /// <summary>
+    /// Lista os itens do objeto User
+    /// </summary>
+    /// <returns>Os itens do objeto User</returns>
+    /// <response code="200">Retorna os itens do objeto User</response>
+    [HttpPost]
+    [AllowAnonymous]
+    public async Task<ActionResult<string>> Login(User request) 
+    {
+        return Ok(await _repository.Login(request));
     }
 
     /// <summary>

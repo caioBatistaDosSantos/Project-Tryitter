@@ -5,11 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using tryitter.PostRepository;
 using tryitter.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace Tryitter.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class PostController : ControllerBase
     {
         private PostRepository _repository { get; set; }
