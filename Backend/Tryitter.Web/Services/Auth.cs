@@ -5,7 +5,7 @@ using tryitter.Models;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace TryitterAuth.Services;
+namespace TryitterAuth;
 public class TokenGenerator
 {
     public string Generate(User user)

@@ -3,13 +3,14 @@ using tryitter.UserRepository;
 using System.Threading.Tasks;
 using tryitter.Models;
 using Microsoft.AspNetCore.Authorization;
+using Tryitter.Requesties;
 
 
 namespace Tryitter.Web.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-[Authorize]
+// [Authorize]
 public class UserController : ControllerBase
 {
     private UserRepository _repository { get; set; }
@@ -22,9 +23,9 @@ public class UserController : ControllerBase
     /// </summary>
     /// <returns>Os itens do objeto User</returns>
     /// <response code="200">Retorna os itens do objeto User</response>
-    [HttpPost]
+    [HttpPost("/login")]
     [AllowAnonymous]
-    public async Task<ActionResult<string>> Login(User request) 
+    public async Task<ActionResult<string>> Login(UserLogin request) 
     {
         return Ok(await _repository.Login(request));
     }

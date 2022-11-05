@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Tryitter.Web.Requesties
+namespace Tryitter.Requesties
 {
     public class UserLogin
     {
