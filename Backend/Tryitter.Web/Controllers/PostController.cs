@@ -20,19 +20,34 @@ namespace Tryitter.Web.Controllers
             _repository = repository;
         }
 
-        [HttpGet("/teste")]
-        public ActionResult<string> Seila() {
-            return Ok(User.Identity.Name);
-        }
-
         /// <summary>
         /// Lista os itens do objeto Post
         /// </summary>
         /// <returns>Os itens do objeto Post</returns>
         /// <response code="200">Retorna os itens do objeto Post</response>
+        /// <response code="401">Unauthorized</response>
         [HttpGet]
         public async Task<ActionResult<List<Post>>> Get() {
             return Ok(await _repository.Get());
+        }
+
+        /// <summary>
+        /// Lista um único item do objeto Post de acordo com id passado
+        /// </summary>
+        /// <returns>Um item do objeto Post</returns>
+        /// <response code="200">Retorna o objeto Post encontrado</response>
+        [HttpGet("me/last")]
+        public async Task<ActionResult<Post>> GetLastPostFromUserLogged() {
+            try 
+            {
+                return Ok(await _repository
+                    .GetLastPostFromUserLogged(Convert.ToInt32(User.Identity.Name)));
+            }
+            catch (InvalidOperationException err)
+            {
+                Console.WriteLine(err.Message);
+                return NotFound("Não encontrei.");
+            }
         }
 
         /// <summary>
@@ -54,7 +69,25 @@ namespace Tryitter.Web.Controllers
         }
 
         /// <summary>
-        /// Lista o último item do objeto Post de acordo com id do usuário que deve ser passado no params
+        /// Lista todo os Posts de um usuário específico
+        /// </summary>
+        /// <returns>Um item do objeto User</returns>
+        /// <response code="200">Retorna os posts do objeto Post</response>
+        [HttpGet("all/{userid}")]
+        public async Task<ActionResult<List<Post>>> GetAllPostsFromUser(int id) {
+            try 
+            {
+                return Ok(await _repository.GetAllPostsFromUser(id));
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return NotFound("Não encontrei.");
+            }
+        }
+
+        /// <summary>
+        /// Lista o último post de um usuário específico
         /// </summary>
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post encontrado</response>
@@ -105,6 +138,7 @@ namespace Tryitter.Web.Controllers
         /// <response code="200">Retorna o objeto Post criado</response>
         [HttpPost]
         public async Task<ActionResult<Post>> Create(Post request) {
+            request.UserId = Convert.ToInt32(User.Identity.Name);
             return Ok(await _repository.Create(request));
         }
     }

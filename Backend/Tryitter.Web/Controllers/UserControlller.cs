@@ -4,7 +4,10 @@ using System.Threading.Tasks;
 using tryitter.Models;
 using Microsoft.AspNetCore.Authorization;
 using Tryitter.Requesties;
+using tryitter.Auth;
 
+
+// Remover os campos Published, UpdatedAT, PostId, UserId.
 
 namespace Tryitter.Web.Controllers;
 
@@ -19,13 +22,13 @@ public class UserController : ControllerBase
     }
 
     /// <summary>
-    /// Lista os itens do objeto User
+    /// Realiza o login do usuário retornando um token caso o usuário seja validado com sucesso.
     /// </summary>
-    /// <returns>Os itens do objeto User</returns>
-    /// <response code="200">Retorna os itens do objeto User</response>
+    /// <returns>Retorna um token</returns>
+    /// <response code="200">Retorna um token</response>
     [HttpPost("/login")]
     [AllowAnonymous]
-    public async Task<ActionResult<string>> Login(UserLogin request) 
+    public async Task<ActionResult<AuthToken>> Login(UserLogin request) 
     {
         return Ok(await _repository.Login(request));
     }
@@ -36,6 +39,7 @@ public class UserController : ControllerBase
     /// <returns>Os itens do objeto User</returns>
     /// <response code="200">Retorna os itens do objeto User</response>
     [HttpGet]
+    [AllowAnonymous]
     public async Task<ActionResult<List<User>>> Get() {
         return Ok(await _repository.Get());
     }
@@ -52,24 +56,6 @@ public class UserController : ControllerBase
             return Ok(await _repository.GetByPk(id));
         }
         catch (InvalidOperationException err)
-        {
-            Console.WriteLine(err.Message);
-            return NotFound("Não encontrei.");
-        }
-    }
-
-    /// <summary>
-    /// Lista um objeto User com seus respectivos item de objeto Post
-    /// </summary>
-    /// <returns>Um item do objeto User</returns>
-    /// <response code="200">Retorna o objeto User encontrado com seus posts</response>
-    [HttpGet("posts")]
-    public async Task<ActionResult<User>> GetUserWithYourPosts(int id) {
-        try 
-        {
-            return Ok(await _repository.GetUserWithYourPosts(id));
-        }
-        catch (Exception err)
         {
             Console.WriteLine(err.Message);
             return NotFound("Não encontrei.");

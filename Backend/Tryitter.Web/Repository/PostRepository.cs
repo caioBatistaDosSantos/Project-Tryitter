@@ -23,6 +23,22 @@ public class PostRepository
         return await _context.Posts.FirstAsync(u => u.PostId == id);
     }
 
+    public async Task<Post> GetLastPostFromUserLogged(int id) {
+        return await _context.Posts
+                             .OrderBy(p => p.PublishedAt)
+                             .LastAsync(p => p.UserId == id);
+    } 
+
+    public async Task<List<Post>> GetAllPostsFromUser(int id) {
+        var userWithYourPosts = await _context.Posts
+                             .Where(u => u.UserId == id)
+                             .ToListAsync();
+
+        if(userWithYourPosts.Count == 0) 
+            throw new DbUpdateException();
+        return userWithYourPosts;
+    }
+
     public async Task<Post> GetLastPostFromUser(int id) {
         return await _context.Posts
                              .OrderBy(p => p.PublishedAt)

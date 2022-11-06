@@ -118,3 +118,7 @@
 /home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
 /home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.Security.Permissions.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.Net.Http.Formatting.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.Web.Http.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll

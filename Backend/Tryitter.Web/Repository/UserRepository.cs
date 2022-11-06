@@ -6,6 +6,7 @@ using tryitter.Requesties;
 using System.Threading;
 using TryitterAuth;
 using Tryitter.Requesties;
+using tryitter.Auth;
 
 namespace tryitter.UserRepository;
 
@@ -17,14 +18,14 @@ public class UserRepository
         _context = context;
     }
 
-    public async Task<string> Login(UserLogin request) {
+    public async Task<AuthToken> Login(UserLogin request) {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
        
         if(user == null || user.Password != request.Password) 
             throw new DbUpdateException("User not found!");
 
         var token = new TokenGenerator().Generate(user);
-        return token;
+        return new AuthToken { Token = token };
     }
     public async Task<List<User>> Get() {
         return await _context.Users.ToListAsync();
@@ -32,17 +33,6 @@ public class UserRepository
 
     public async Task<User> GetByPk(int id) {
         return await _context.Users.FirstAsync(u => u.Id == id);
-    }
-
-    public async Task<List<User>> GetUserWithYourPosts(int id) {
-        var userWithYourPosts = await _context.Users
-                             .Include(p => p.Posts)
-                             .Where(u => u.Id == id)
-                             .ToListAsync();
-
-        if(userWithYourPosts.Count == 0) 
-            throw new DbUpdateException();
-        return userWithYourPosts;
     }
 
     public async Task<User> Remove(int id) {
