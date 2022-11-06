@@ -17,7 +17,6 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("Tryitter.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tryitter.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Tryitter.Test")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

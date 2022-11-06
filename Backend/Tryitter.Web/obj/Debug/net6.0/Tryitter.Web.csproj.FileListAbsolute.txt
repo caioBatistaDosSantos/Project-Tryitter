@@ -408,3 +408,15 @@
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.IO.Pipelines.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Web/obj/Debug/net6.0/MvcTestingAppManifest.json
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Web/obj/Debug/net6.0/Tryitter.Web.xml
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.Net.Http.Formatting.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.Web.Http.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/home/abner/Project-Tryitter/Backend/Tryitter.Web/bin/Debug/net6.0/System.Security.Permissions.dll
