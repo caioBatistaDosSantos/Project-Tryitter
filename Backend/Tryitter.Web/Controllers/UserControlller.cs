@@ -50,10 +50,10 @@ public class UserController : ControllerBase
     /// <returns>Um item do objeto User</returns>
     /// <response code="200">Retorna o objeto User encontrado</response>
     [HttpGet("{userid}")]
-    public async Task<ActionResult<User>> GetByPk(int id) {
+    public async Task<ActionResult<User>> GetByPk(int userid) {
         try 
         {
-            return Ok(await _repository.GetByPk(id));
+            return Ok(await _repository.GetByPk(userid));
         }
         catch (InvalidOperationException err)
         {
@@ -68,10 +68,10 @@ public class UserController : ControllerBase
     /// <returns>Um item do objeto User</returns>
     /// <response code="200">Retorna o objeto User encontrado</response>
     [HttpDelete("{userid}")]
-    public async Task<ActionResult<User>> Remove(int id) {
+    public async Task<ActionResult<User>> Remove(int userid) {
         try 
         {
-            return Ok(await _repository.Remove(id));
+            return Ok(await _repository.Remove(userid));
         }
         catch (InvalidOperationException err)
         {
@@ -86,10 +86,10 @@ public class UserController : ControllerBase
     /// <returns>Um item do objeto User</returns>
     /// <response code="200">Retorna o objeto User atualizado</response>
     [HttpPut("{userid}")]
-    public async Task<ActionResult<User>> Update(int id, User request) {
+    public async Task<ActionResult<User>> Update(int userid, User request) {
         try 
         {
-            return Ok(await _repository.Update(id, request));
+            return Ok(await _repository.Update(userid, request));
         }
         catch(Exception err) 
         {

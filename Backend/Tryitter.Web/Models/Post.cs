@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 namespace tryitter.Models;
 public class Post
 {
-    [Key, JsonIgnore]
+    [Key]
     public int? PostId { get; set; }
     public string UrlImage { get; set; } = string.Empty;
     public string Content { get; set; } = string.Empty;

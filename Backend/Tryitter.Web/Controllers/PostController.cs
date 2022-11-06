@@ -32,7 +32,7 @@ namespace Tryitter.Web.Controllers
         }
 
         /// <summary>
-        /// Lista um único item do objeto Post de acordo com id passado
+        /// Lista o último post do usuário logado
         /// </summary>
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post encontrado</response>
@@ -56,10 +56,10 @@ namespace Tryitter.Web.Controllers
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post encontrado</response>
         [HttpGet("{postid}")]
-        public async Task<ActionResult<Post>> GetByPk(int id) {
+        public async Task<ActionResult<Post>> GetByPk(int postid) {
             try 
             {
-                return Ok(await _repository.GetByPk(id));
+                return Ok(await _repository.GetByPk(postid));
             }
             catch (InvalidOperationException err)
             {
@@ -69,15 +69,15 @@ namespace Tryitter.Web.Controllers
         }
 
         /// <summary>
-        /// Lista todo os Posts de um usuário específico
+        /// Lista todos os Posts de um usuário específico
         /// </summary>
         /// <returns>Um item do objeto User</returns>
         /// <response code="200">Retorna os posts do objeto Post</response>
         [HttpGet("all/{userid}")]
-        public async Task<ActionResult<List<Post>>> GetAllPostsFromUser(int id) {
+        public async Task<ActionResult<List<Post>>> GetAllPostsFromUser(int userid) {
             try 
             {
-                return Ok(await _repository.GetAllPostsFromUser(id));
+                return Ok(await _repository.GetAllPostsFromUser(userid));
             }
             catch (Exception err)
             {
@@ -102,10 +102,10 @@ namespace Tryitter.Web.Controllers
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post encontrado</response>
         [HttpDelete("{postid}")]
-        public async Task<ActionResult<Post>> Remove(int id) {
+        public async Task<ActionResult<Post>> Remove(int postid) {
             try 
             {
-                return Ok(await _repository.Remove(id));
+                return Ok(await _repository.Remove(postid));
             }
             catch (InvalidOperationException err)
             {
@@ -120,10 +120,10 @@ namespace Tryitter.Web.Controllers
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post atualizado</response>
         [HttpPut("{postid}")]
-        public async Task<ActionResult<Post>> Update(int id, Post request) {
+        public async Task<ActionResult<Post>> Update(int postid, Post request) {
             try 
             {
-                return Ok(await _repository.Update(id, request));
+                return Ok(await _repository.Update(postid, request));
             }
             catch(Exception err) 
             {
