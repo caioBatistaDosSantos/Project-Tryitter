@@ -1,8 +1,8 @@
-<h1 align="center">🚀 Bem vindo ao projeto Tryiiter! 🚀</h1>
+<h1 align="center">🚀 Bem vindo ao projeto Tryitter! 🚀</h1>
 
 <h2>🥱 Introdução...</h2>
 
-<p>Este repositório contêm uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.</p>
+<p>Este repositório contém uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.</p>
 
 ---
 
@@ -50,10 +50,7 @@
 <summary><strong>Como usar cada rota?</strong></summary>  
 </br>
  
-<p>Rotas da entidade User</p>  
-<li>Lista todos os usuários presentes no banco.</li>
-+ <p>- Rota GET https://localhost:7114/User</p>
-
+[Rotas Documentadas](https://github.com/caioBatistaDosSantos/Project-Tryitter/blob/main/BlogsAPI.md)
       
 </details>
 
