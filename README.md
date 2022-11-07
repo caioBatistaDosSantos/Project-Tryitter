@@ -2,7 +2,7 @@
 
 ## 🥱 Introdução...
 
-Este repositório contêm uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.
+<p>Este repositório contêm uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.</p>
 
 ## 🛠️ Tecnologias utilizadas 🧰
 
@@ -20,29 +20,36 @@ Este repositório contêm uma Application Programming Interface(API) de Blogs e 
 
 * 👉 Swagger
 
+## 👨‍💻 Rodando o projeto na sua máquina 👨‍💻
+
 <details>
-<summary><strong>Como rodar a aplicação</strong></summary>
-
-
+  
+<summary><strong>Como rodar?</strong></summary>
+  
 1. Clone o repositório com o comando:
   - `git clone git@github.com:caioBatistaDosSantos/Project-Tryitter.git`;
     - Entre na pasta do repositório:
       - `cd Project-Tryitter`
 2. Suba o banco de dados MySQL com o comando:
-  - `docker-compose up -d --build`
+ - `docker-compose up -d --build`
 3. Entre na pasta da API com o comando:
-  - `cd Backend/Tryitter.Web`
+ - `cd Backend/Tryitter.Web`
 4. Instale as dependências com o comando:
-  - `dotnet restore`
+ - `dotnet restore`
 5. Inicie a aplicação com o comando:
-  - `dotnet run`
-    - *Obs: Este comando será responsável tanto por criar o banco de dados e populá-lo, como também subir a API e disponilizar uma URL para acesso da aplicação.*
+ - `dotnet run`
+   - *Obs: Este comando será responsável tanto por criar o banco de dados e populá-lo, como também subir a API e disponilizar uma URL para acesso da    aplicação.*
   
 </details>
 
+## <i>Projeto em desenvolvimento...</i>
+
+- [Trello](https://trello.com/c/9tutsbgi/11-link-do-escalidraw-https-excalidrawcom-json6iooox5zdvz4of7xxzyny7vcx0bqpjbjhsoorrjftta)
+- [Escalidraw](https://excalidraw.com/#json=6IooOx5zDVZ4OF7XXzyny,7vCx0bQpJBJHSoOrRJfTtA)
+
 ## Defafios que enfrentamos...  🗡️ 💥 
 
-* 🛡️ Trabalhar sem iniciar um projeto node/npm via CLI, só usando o arquivo ".html".
+* 🛡️ .
 * 🥊 Criar uma máscara para o input.
 * ⚔️ Validações e EventHandlers.
 
@@ -53,10 +60,4 @@ Este repositório contêm uma Application Programming Interface(API) de Blogs e 
 💻 Quero listar as aprendizados em hard skills adquiridos/reforçados: 💻
 
 ---
-
-## <i>Projeto em desenvolvimento...</i>
-
-  - Trello: https://trello.com/c/9tutsbgi/11-link-do-escalidraw-https-excalidrawcom-json6iooox5zdvz4of7xxzyny7vcx0bqpjbjhsoorrjftta
-  - Escalidraw: https://excalidraw.com/#json=6IooOx5zDVZ4OF7XXzyny,7vCx0bQpJBJHSoOrRJfTtA
-
 ---
