@@ -50,7 +50,7 @@
 <summary><strong>Como usar cada rota?</strong></summary>  
 </br>
  
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
+[Rotas Documentadas](https://github.com/user/repo/blob/branch/Blogs API.md)
       
 </details>
 
