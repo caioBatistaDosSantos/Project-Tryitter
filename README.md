@@ -4,7 +4,7 @@
 
 Este repositório contêm uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.
 
-## Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas 🧰
 
 * 👉 C#
 
@@ -20,7 +20,9 @@ Este repositório contêm uma Application Programming Interface(API) de Blogs e 
 
 * 👉 Swagger
 
-## Como rodar:
+<details>
+<summary><strong>Como rodar a aplicação</strong></summary>
+
 
 1. Clone o repositório com o comando:
   - `git clone git@github.com:caioBatistaDosSantos/Project-Tryitter.git`;
@@ -35,6 +37,8 @@ Este repositório contêm uma Application Programming Interface(API) de Blogs e 
 5. Inicie a aplicação com o comando:
   - `dotnet run`
     - *Obs: Este comando será responsável tanto por criar o banco de dados e populá-lo, como também subir a API e disponilizar uma URL para acesso da aplicação.*
+  
+</details>
 
 ## Defafios que enfrentamos...  🗡️ 💥 
 
