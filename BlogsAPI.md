@@ -16,13 +16,6 @@
 }
 ```
 
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiNCIsIm5iZiI6MTY2Nzc3NDYwOCwiZXhwIjoxNjY3ODYxMDA4LCJpYXQiOjE2Njc3NzQ2MDh9.veNBtIerNKAYiMAAUIiZzUiSQc0TMALPsRihM0fnW3Y|string|
-
-
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -35,7 +28,7 @@
 
 |Param|value|Type|
 |---|---|---|
-|token|eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiNCIsIm5iZiI6MTY2Nzc3NDYwOCwiZXhwIjoxNjY3ODYxMDA4LCJpYXQiOjE2Njc3NzQ2MDh9.veNBtIerNKAYiMAAUIiZzUiSQc0TMALPsRihM0fnW3Y|string|
+|token|eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiNCIsIm5iZiI6MTY2NzgzODc2MCwiZXhwIjoxNjY3ODQyMzYwLCJpYXQiOjE2Njc4Mzg3NjB9.M2lY_mOXT4MIu_oY3GMX0U-hv6M8Od4-LQouV-Fe8Cg|string|
 
 
 
@@ -57,13 +50,6 @@
   "status": "Faça um pouco e depois faça mais."
 }
 ```
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiNCIsIm5iZiI6MTY2Nzc3NDYwOCwiZXhwIjoxNjY3ODYxMDA4LCJpYXQiOjE2Njc3NzQ2MDh9.veNBtIerNKAYiMAAUIiZzUiSQc0TMALPsRihM0fnW3Y|string|
-
 
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃

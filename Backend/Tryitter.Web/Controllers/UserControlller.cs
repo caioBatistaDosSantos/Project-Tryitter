@@ -102,6 +102,7 @@ public class UserController : ControllerBase
     /// <returns>Um item do objeto User</returns>
     /// <response code="200">Retorna o objeto User criado</response>
     [HttpPost]
+    [AllowAnonymous]
     public async Task<ActionResult<User>> Create(User request) {
         return Ok(await _repository.Create(request));
     }
