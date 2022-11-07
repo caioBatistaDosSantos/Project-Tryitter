@@ -4,7 +4,23 @@
 
 Este repositório contêm uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.
 
-## Defafios que infrentei...  🗡️ 💥 
+## Tecnologias utilizadas
+
+* 👉 C#
+
+* 👉 .NET
+
+* 👉 ASP.NET
+
+* 👉 JsonWebToken
+
+* 👉 MySQL
+
+* 👉 Entitiy Framework
+
+* 👉 Swagger
+
+## Defafios que enfrentamos...  🗡️ 💥 
 
 * 🛡️ Trabalhar sem iniciar um projeto node/npm via CLI, só usando o arquivo ".html".
 * 🥊 Criar uma máscara para o input.
@@ -16,15 +32,7 @@ Este repositório contêm uma Application Programming Interface(API) de Blogs e 
 
 💻 Quero listar as aprendizados em hard skills adquiridos/reforçados: 💻
 
-* 👉 Vuetify
 
-* 👉 JavaScript
-
-* 👉 Tailwind
-
-* 👉 Trabalhar com bibliotecas só usando o link CDN.
-
-* 👉 Boostrap icons.
 
 ---
 
