@@ -1,4 +1,4 @@
-<h1 align="center">🚀 Bem vindo ao projeto Tryiiter! 🚀</h1>
+<h1 align="center">🚀 Bem vindo ao projeto Tryitter! 🚀</h1>
 
 <h2>🥱 Introdução...</h2>
 
