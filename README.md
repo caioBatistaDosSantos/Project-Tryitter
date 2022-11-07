@@ -67,5 +67,5 @@
 
 <h2>Minhas considerações finais... ✍️</h2>
 
-<p align="center">📚 Aprendi a pensar/refletir mais ao me deparar com um problema, no sentido de entender o que está causando aquela situação, ao invés de sair teclando sem um norte com o fim de achar a solução por pura tentativa, no C# isso não adianta. Isso me ajudou a desenvolver soluções mais assertivas e até mais concisas.</p>
+<p>📚 Aprendi a pensar/refletir mais ao me deparar com um problema, no sentido de entender o que está causando aquela situação, ao invés de sair teclando sem um norte com o fim de achar a solução por pura tentativa, no C# isso não adianta. Isso me ajudou a desenvolver soluções mais assertivas e até mais concisas.</p>
 
