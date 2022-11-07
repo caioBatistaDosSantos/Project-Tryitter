@@ -22,6 +22,7 @@
 
 * <p>👉 Swagger</p>
 
+* <p>👉 xUnit</p>
 ---
 
 <h2>👨‍💻 Rodando o projeto e usar os recuros da API na sua máquina 👨‍💻</h2>
