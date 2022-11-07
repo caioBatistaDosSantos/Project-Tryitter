@@ -50,10 +50,7 @@
 <summary><strong>Como usar cada rota?</strong></summary>  
 </br>
  
-<p>Rotas da entidade User</p>  
-<li>Lista todos os usuários presentes no banco.</li>
-+ <p>- Rota GET https://localhost:7114/User</p>
-
+[a link](https://github.com/user/repo/blob/branch/other_file.md)
       
 </details>
 
