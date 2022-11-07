@@ -2,7 +2,7 @@
 
 <h2>🥱 Introdução...</h2>
 
-<p>Este repositório contêm uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.</p>
+<p>Este repositório contém uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.</p>
 
 ---
 
