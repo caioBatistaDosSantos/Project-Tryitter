@@ -1,26 +1,30 @@
-# 🚀 Bem vindo ao projeto Tryiiter! 🚀
+<h1 align="center">🚀 Bem vindo ao projeto Tryiiter! 🚀</h1>
 
-## 🥱 Introdução...
+<h2>🥱 Introdução...</h2>
 
 <p>Este repositório contêm uma Application Programming Interface(API) de Blogs e seus testes, desenvolvidos usando a plataforma .NET e C#.</p>
 
-## 🛠️ Tecnologias utilizadas 🧰
+---
 
-* 👉 C#
+<h2>🛠️ Tecnologias utilizadas 🧰</h2>
 
-* 👉 .NET
+* <p>👉 C#</p>
 
-* 👉 ASP.NET
+* <p>👉 .NET</p>
 
-* 👉 JsonWebToken
+* <p>👉 ASP.NET</p>
 
-* 👉 MySQL
+* <p>👉 JsonWebToken</p>
 
-* 👉 Entitiy Framework
+* <p>👉 MySQL</p>
 
-* 👉 Swagger
+* <p>👉 Entitiy Framework</p>
 
-## 👨‍💻 Rodando o projeto na sua máquina 👨‍💻
+* <p>👉 Swagger</p>
+
+---
+
+<h2>👨‍💻 Rodando o projeto e usar os recuros da API na sua máquina 👨‍💻</h2>
 
 <details>
   
@@ -41,23 +45,30 @@
    - *Obs: Este comando será responsável tanto por criar o banco de dados e populá-lo, como também subir a API e disponilizar uma URL para acesso da    aplicação.*
   
 </details>
+<details>
+  
+<summary><strong>Como usar cada rota?</strong></summary>  
+</br>
+ 
+<p>Rotas da entidade User</p>  
+<li>Lista todos os usuários presentes no banco.</li>
++ <p>- Rota GET https://localhost:7114/User</p>
 
-## <i>Projeto em desenvolvimento...</i>
+      
+</details>
+
+<h2><i>Projeto em desenvolvimento...</i></h2>
 
 - [Trello](https://trello.com/c/9tutsbgi/11-link-do-escalidraw-https-excalidrawcom-json6iooox5zdvz4of7xxzyny7vcx0bqpjbjhsoorrjftta)
 - [Escalidraw](https://excalidraw.com/#json=6IooOx5zDVZ4OF7XXzyny,7vCx0bQpJBJHSoOrRJfTtA)
 
-## Defafios que enfrentamos...  🗡️ 💥 
+<h2>💥 Defafios que enfrentamos... 🗡️</h2> 
 
-* 🛡️ .
-* 🥊 Criar uma máscara para o input.
-* ⚔️ Validações e EventHandlers.
+* 🛡️ Conflitos de código.
+* 🥊 Configuração de algumas ferramentas como JWT e os Testes.
+* ⚔️ Como popular o banco de dados.
 
-## Minhas considerações finais... ✍️
+<h2>Minhas considerações finais... ✍️</h2>
 
-📚 Aprendi a pensar/refletir mais ao me deparar com um problema, no sentido de entender o que está causando aquele situação, ao invés de sair teclando sem um norte com o fim de achar a solução por pura tentativa. E isso me ajudou a desenvolver soluções mais assertivas e até mais concisas.
+<p align="center">📚 Aprendi a pensar/refletir mais ao me deparar com um problema, no sentido de entender o que está causando aquela situação, ao invés de sair teclando sem um norte com o fim de achar a solução por pura tentativa, no C# isso não adianta. Isso me ajudou a desenvolver soluções mais assertivas e até mais concisas.</p>
 
-💻 Quero listar as aprendizados em hard skills adquiridos/reforçados: 💻
-
----
----
