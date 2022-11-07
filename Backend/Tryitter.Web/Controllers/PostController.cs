@@ -92,8 +92,8 @@ namespace Tryitter.Web.Controllers
         /// <returns>Um item do objeto Post</returns>
         /// <response code="200">Retorna o objeto Post encontrado</response>
         [HttpGet("last/{userid}")]
-        public async Task<Post> GetLastPostFromUser(int userid) {
-            return await _repository.GetLastPostFromUser(userid);
+        public async Task<Post> GetLastPostByUser(int userid) {
+            return await _repository.GetLastPostByUser(userid);
         }
 
         /// <summary>

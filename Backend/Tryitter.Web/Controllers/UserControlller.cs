@@ -26,7 +26,7 @@ public class UserController : ControllerBase
     /// </summary>
     /// <returns>Retorna um token</returns>
     /// <response code="200">Retorna um token</response>
-    [HttpPost("/login")]
+    [HttpPost("/Login")]
     [AllowAnonymous]
     public async Task<ActionResult<AuthToken>> Login(UserLogin request) 
     {
@@ -39,7 +39,6 @@ public class UserController : ControllerBase
     /// <returns>Os itens do objeto User</returns>
     /// <response code="200">Retorna os itens do objeto User</response>
     [HttpGet]
-    [AllowAnonymous]
     public async Task<ActionResult<List<User>>> Get() {
         return Ok(await _repository.Get());
     }
