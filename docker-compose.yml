@@ -1,5 +1,23 @@
 version: '3.9'
 services:
+  backend:
+    container_name: Tryitter_backend
+    build:
+      context: ./Backend/Tryitter.Web
+      dockerfile: ./Dockerfile
+    ports:
+      - 7114:7114
+      - 5105:5105
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: 'always'
+    environment:
+      - DOTNET_CONNECTION_STRING:@"Server=db; Database=students_db; Uid=root; Password=123456;"
+    healthcheck:
+      test: ['CMD', 'lsof', '-t', '-i:7114']
+      timeout: 30s
+      retries: 15
   db:
     image: mysql:8.0.21
     container_name: db

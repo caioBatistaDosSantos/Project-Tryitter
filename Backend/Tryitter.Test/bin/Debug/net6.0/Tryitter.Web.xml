@@ -10,10 +10,32 @@
             </summary>
             <returns>Os itens do objeto Post</returns>
             <response code="200">Retorna os itens do objeto Post</response>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.PostController.GetLastPostFromUserLogged">
+            <summary>
+            Lista o último post do usuário logado
+            </summary>
+            <returns>Um item do objeto Post</returns>
+            <response code="200">Retorna o objeto Post encontrado</response>
         </member>
         <member name="M:Tryitter.Web.Controllers.PostController.GetByPk(System.Int32)">
             <summary>
             Lista um único item do objeto Post de acordo com id passado
+            </summary>
+            <returns>Um item do objeto Post</returns>
+            <response code="200">Retorna o objeto Post encontrado</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.PostController.GetAllPostsFromUser(System.Int32)">
+            <summary>
+            Lista todos os Posts de um usuário específico
+            </summary>
+            <returns>Um item do objeto User</returns>
+            <response code="200">Retorna os posts do objeto Post</response>
+        </member>
+        <member name="M:Tryitter.Web.Controllers.PostController.GetLastPostByUser(System.Int32)">
+            <summary>
+            Lista o último post de um usuário específico
             </summary>
             <returns>Um item do objeto Post</returns>
             <response code="200">Retorna o objeto Post encontrado</response>
@@ -39,6 +61,13 @@
             <returns>Um item do objeto Post</returns>
             <response code="200">Retorna o objeto Post criado</response>
         </member>
+        <member name="M:Tryitter.Web.Controllers.UserController.Login(Tryitter.Requesties.UserLogin)">
+            <summary>
+            Realiza o login do usuário retornando um token caso o usuário seja validado com sucesso.
+            </summary>
+            <returns>Retorna um token</returns>
+            <response code="200">Retorna um token</response>
+        </member>
         <member name="M:Tryitter.Web.Controllers.UserController.Get">
             <summary>
             Lista os itens do objeto User
@@ -57,8 +86,8 @@
             <summary>
             Remove o item o objeto User se existir
             </summary>
-            <returns>Um item do objeto User</returns>
-            <response code="200">Retorna o objeto User encontrado</response>
+            <returns>StatusCode NoContent</returns>
+            <response code="204">Retorna um StatusCode NoContent</response>
         </member>
         <member name="M:Tryitter.Web.Controllers.UserController.Update(System.Int32,tryitter.Models.User)">
             <summary>

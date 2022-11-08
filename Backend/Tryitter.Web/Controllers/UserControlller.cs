@@ -64,13 +64,14 @@ public class UserController : ControllerBase
     /// <summary>
     /// Remove o item o objeto User se existir
     /// </summary>
-    /// <returns>Um item do objeto User</returns>
-    /// <response code="200">Retorna o objeto User encontrado</response>
+    /// <returns>StatusCode NoContent</returns>
+    /// <response code="204">Retorna um StatusCode NoContent</response>
     [HttpDelete("{userid}")]
     public async Task<ActionResult<User>> Remove(int userid) {
         try 
         {
-            return Ok(await _repository.Remove(userid));
+            await _repository.Remove(userid);
+            return NoContent();
         }
         catch (InvalidOperationException err)
         {
@@ -92,7 +93,8 @@ public class UserController : ControllerBase
         }
         catch(Exception err) 
         {
-            return NotFound(err.Message);
+            Console.WriteLine(err.Message);
+            return NotFound("Não encontrei.");
         }
     }
 

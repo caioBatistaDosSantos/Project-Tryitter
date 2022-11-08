@@ -20,7 +20,7 @@ public class UserRepository
 
     public async Task<AuthToken> Login(UserLogin request) {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
-       
+
         if(user == null || user.Password != request.Password) 
             throw new DbUpdateException("User not found!");
 

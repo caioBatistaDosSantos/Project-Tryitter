@@ -309,11 +309,8 @@
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
-/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
-/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.Extensions.Configuration.UserSecrets.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
-/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.Extensions.Hosting.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.OpenApi.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -330,7 +327,6 @@
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
-/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/System.IO.Pipelines.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/xunit.abstractions.dll
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/xunit.assert.dll
@@ -417,3 +413,14 @@
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/obj/Debug/net6.0/Tryitter.Test.pdb
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/obj/Debug/net6.0/Tryitter.Test.genruntimeconfig.cache
 /Users/macbook/Project-Tryitter/Backend/Tryitter.Test/obj/Debug/net6.0/ref/Tryitter.Test.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/System.Net.Http.Formatting.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/System.Web.Http.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/macbook/Project-Tryitter/Backend/Tryitter.Test/bin/Debug/net6.0/System.Security.Permissions.dll

@@ -15,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<TryitterContext>(options =>
 {
-    string connectionString = @"Server=localhost; Database=tryitter_db; Uid=root; Pwd=123456;";
+    string connectionString = @"Server=db; Database=tryitter_db; Uid=root; Pwd=123456;";
     options.UseMySql(connectionString,
         ServerVersion.AutoDetect(connectionString),
         mySqlOptions =>
@@ -92,3 +92,5 @@ app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.MapControllers();
 
 app.Run();
+
+public partial class Program {}
