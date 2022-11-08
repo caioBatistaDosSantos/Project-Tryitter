@@ -11,10 +11,10 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Backend/Tryitter.Web/Tryitter.Web.csproj", "Backend/Tryitter.Web/"]
-RUN dotnet restore "Backend/Tryitter.Web/Tryitter.Web.csproj"
+COPY ["Tryitter.Web.csproj", "./"]
+RUN dotnet restore "Tryitter.Web.csproj"
 COPY . .
-WORKDIR "/src/Backend/Tryitter.Web"
+WORKDIR "/src/."
 RUN dotnet build "Tryitter.Web.csproj" -c Release -o /app/build
 
 FROM build AS publish

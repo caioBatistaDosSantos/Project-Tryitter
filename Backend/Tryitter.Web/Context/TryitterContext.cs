@@ -14,7 +14,7 @@ public class TryitterContext : DbContext, ITryitterContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            var connectionString = Environment.GetEnvironmentVariable(@"Server=localhost; Database=tryitter_db; Uid=root; Pwd=123456;");
+            var connectionString = Environment.GetEnvironmentVariable(@"Server=db; Database=tryitter_db; Uid=root; Pwd=123456;");
 
             optionsBuilder.UseMySql(
                 connectionString,
