@@ -6,8 +6,8 @@ services:
       context: ./Backend/Tryitter.Web
       dockerfile: ./Dockerfile
     ports:
-      - 3000:3000
-      - 3001:3001
+      - 7114:7114
+      - 5105:5105
     depends_on:
       db:
         condition: service_healthy
@@ -15,7 +15,7 @@ services:
     environment:
       - DOTNET_CONNECTION_STRING:@"Server=db; Database=students_db; Uid=root; Password=123456;"
     healthcheck:
-      test: ['CMD', 'lsof', '-t', '-i:3001']
+      test: ['CMD', 'lsof', '-t', '-i:7114']
       timeout: 30s
       retries: 15
   db:
