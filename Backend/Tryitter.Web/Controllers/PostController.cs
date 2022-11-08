@@ -105,7 +105,8 @@ namespace Tryitter.Web.Controllers
         public async Task<ActionResult<Post>> Remove(int postid) {
             try 
             {
-                return Ok(await _repository.Remove(postid));
+                await _repository.Remove(postid);
+                return NoContent();
             }
             catch (InvalidOperationException err)
             {
@@ -127,7 +128,8 @@ namespace Tryitter.Web.Controllers
             }
             catch(Exception err) 
             {
-                return NotFound(err.Message);
+                Console.WriteLine(err.Message);
+                return NotFound("Não encontrei.");
             }
         }
 
