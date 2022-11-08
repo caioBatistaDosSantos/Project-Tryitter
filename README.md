@@ -23,6 +23,10 @@
 * <p>👉 Swagger</p>
 
 * <p>👉 xUnit</p>
+
+* <p>👉 FlueAssertions</p>
+
+* <p>👉 Docker</p>
 ---
 
 <h2>👨‍💻 Rodando o projeto e usar os recuros da API na sua máquina 👨‍💻</h2>
@@ -35,15 +39,9 @@
   - `git clone git@github.com:caioBatistaDosSantos/Project-Tryitter.git`;
     - Entre na pasta do repositório:
       - `cd Project-Tryitter`
-2. Suba o banco de dados MySQL com o comando:
+2. Inicie a aplicação com o comando:
  - `docker-compose up -d --build`
-3. Entre na pasta da API com o comando:
- - `cd Backend/Tryitter.Web`
-4. Instale as dependências com o comando:
- - `dotnet restore`
-5. Inicie a aplicação com o comando:
- - `dotnet run`
-   - *Obs: Este comando será responsável tanto por criar o banco de dados e populá-lo, como também subir a API e disponilizar uma URL para acesso da    aplicação.*
+   - *Obs: Este comando será responsável por criar dois cointainers docker: um para iniciar banco de dados e populá-lo, e outro para subir a API e disponilizar uma URL para acesso da aplicação.*
   
 </details>
 <details>
@@ -66,7 +64,7 @@
 * 🥊 Configuração de algumas ferramentas como JWT e os Testes.
 * ⚔️ Como popular o banco de dados.
 
-<h2>Minhas considerações finais... ✍️</h2>
+<h2>Considerações finais... ✍️</h2>
 
-<p>📚 Aprendi a pensar/refletir mais ao me deparar com um problema, no sentido de entender o que está causando aquela situação, ao invés de sair teclando sem um norte com o fim de achar a solução por pura tentativa, no C# isso não adianta. Isso me ajudou a desenvolver soluções mais assertivas e até mais concisas.</p>
+<p>📚 Aprendemos a pensar/refletir mais ao nos deparar com um problema, no sentido de entender o que está causando aquela situação, ao invés de sair teclando sem um norte com o fim de achar a solução por pura tentativa, no C# isso não adianta. Isso nos ajudou a desenvolver soluções mais assertivas e até mais concisas.</p>
 
