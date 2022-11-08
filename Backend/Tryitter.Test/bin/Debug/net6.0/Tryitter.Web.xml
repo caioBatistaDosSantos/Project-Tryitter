@@ -86,8 +86,8 @@
             <summary>
             Remove o item o objeto User se existir
             </summary>
-            <returns>Um item do objeto User</returns>
-            <response code="200">Retorna o objeto User encontrado</response>
+            <returns>StatusCode NoContent</returns>
+            <response code="204">Retorna um StatusCode NoContent</response>
         </member>
         <member name="M:Tryitter.Web.Controllers.UserController.Update(System.Int32,tryitter.Models.User)">
             <summary>
